@@ -6,30 +6,35 @@ const questions = [
     question: "What is the implicit return type of constructor?",
     options: ["Void", "Public","private","none"],
     answer: 0,
+    description: "A constructor in Java has an implicit return type of void. It doesn't need to be explicitly specified as it always returns the instance of the class."
   },
   {
     id: 2,
     question: "When is the object created with a new keyword?",
     options: ["Compile time", "Run time","none","none"],
     answer: 1,
+    description: "Objects are created at runtime when using the 'new' keyword. This is because memory allocation and object initialization happen during program execution."
   },
   {
     id: 3,
     question: "Which of these is not a feature of OOP?",
     options: ["Data encapsulation", "Data abstraction", "Inheritance", "None of the above"],
     answer: 3,
+    description: "All of the mentioned options (Data encapsulation, Data abstraction, and Inheritance) are fundamental features of Object-Oriented Programming."
   },
   {
     id: 4,
     question: "Which features of OOP are extensively used in implementing inheritance?",
     options: ["Dynamic binding", "Abstraction", "Operator overloading", "Polymorphism"],
     answer: 0,
+    description: "Dynamic binding is extensively used in inheritance as it allows the program to determine which method to call at runtime based on the actual object type."
   },
   {
     id: 5,
     question: "Member variables are initialized to zero when the first object of its class is created?",
     options: ["Static", "Local", "Global", "External"],
     answer: 0,
+    description: "Static member variables are initialized to zero/null when the first object of the class is created or when the class is loaded for the first time."
   },
   {
     id: 6,
@@ -263,7 +268,7 @@ const questions = [
   },
   {
     id: 31,
-    question: "Which of the following is the correct way of importing an entire package ‘pkg’?",
+    question: "Which of the following is the correct way of importing an entire package 'pkg'?",
     options: ["Import pkg.", "Import pkg.", "import pkg.*", "Import pkg.*"],
     answer: 2,
   },
@@ -541,7 +546,7 @@ const questions = [
     question: "One of the following statements is not true?",
     options: [
       "No method bodies in Interface",
-      "No method body’s in abstract class",
+      "No method body's in abstract class",
       "Multiple parent interfaces",
       "Only one parent class"
     ],
