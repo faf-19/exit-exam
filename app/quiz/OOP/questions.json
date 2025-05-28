@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "question": "What is the implicit return type of constructor?",
+    "options": ["Void", "Public", "Private", "Protected"],
+    "answer": 0,
+    "description": "A constructor in Java has an implicit return type of void. It doesn't need to be explicitly specified."
+  },
+  {
+    "id": 2,
+    "question": "When is the object created with a new keyword?",
+    "options": ["Compile time", "Run time", "Depend on the java virtual machine", "None of the above"],
+    "answer": 1,
+    "description": "Objects are created at runtime when using the 'new' keyword. This allows for dynamic memory allocation."
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is not a feature of OOP?",
+    "options": ["Data encapsulation", "Data abstraction", "Inheritance", "Procedural programming"],
+    "answer": 3,
+    "description": "Procedural programming is not a feature of OOP. OOP features include encapsulation, abstraction, inheritance, and polymorphism."
+  },
+  {
+    "id": 4,
+    "question": "What is inheritance in OOP?",
+    "options": ["Creating multiple objects", "Creating a new class from existing class", "Both A and B", "None of the above"],
+    "answer": 1,
+    "description": "Inheritance is a mechanism that allows a class to inherit properties and methods from another class."
+  },
+  {
+    "id": 5,
+    "question": "What is polymorphism in OOP?",
+    "options": ["Method overloading", "Method overriding", "Both A and B", "None of the above"],
+    "answer": 2,
+    "description": "Polymorphism includes both method overloading (compile-time) and method overriding (runtime)."
+  }
+] 
