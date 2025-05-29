@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { QuizContent } from "./quiz-content";
+
 
 type CourseId = 'oop' | 'dsa' | 'dld' | 'dccn' | 'os' | 'dbms' | 'ds' | 'cd' | 'mi' | 'ca' | 'fp' | 'cs' | 'fsa' | 'ai';
 
