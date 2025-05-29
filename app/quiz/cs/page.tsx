@@ -1,6 +1,6 @@
-import type { Question } from "./dccn";
+import { QuizContent } from "../[course]/quiz-content"; 
 
-const questions: Question[] = [
+const questions = [
   {
     id: 1,
     question: "What is a deadlock in operating systems?",
@@ -28,4 +28,6 @@ const questions: Question[] = [
   // Add more OS questions here
 ];
 
-export default questions; 
+export default function OOPQuizPage() {
+  return <QuizContent questions={questions} courseTitle=" incorrect Computer security" />;
+} 

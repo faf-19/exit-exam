@@ -947,5 +947,5 @@ const questions = [
         
 
 export default function DBMSQuizPage() {
-  return <QuizContent questions={questions} courseTitle="Database Management Systems" />;
+  return <QuizContent questions={questions} courseTitle=" incorrectDatabase Management Systems" />;
 } 

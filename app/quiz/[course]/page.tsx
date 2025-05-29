@@ -16,20 +16,10 @@ const courseTitles: Record<CourseId, string> = {
   ca: "Computer Architecture",
   fp: "Fundamentals of Programming",
   cs: "Computer Security",
-  fsa: "Formal System and Automata",
+  fsa: "Fundamentals of software ebgineering",
   ai: "Introduction to Artificial Intelligence"
+  
 };
-
-// Example questions for OOP (you'll replace this with actual questions in each course's page.tsx)
-const questions = [
-  {
-    id: 1,
-    question: "What is the implicit return type of constructor?",
-    options: ["Void", "Public", "Private", "Protected"],
-    answer: 0,
-    description: "A constructor in Java has an implicit return type of void. It doesn't need to be explicitly specified."
-  }
-];
 
 export default function QuizPage({
   params,

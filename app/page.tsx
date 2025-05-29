@@ -15,7 +15,8 @@ const courses = [
   { id: "distributed", name: "Destributed system", description: "Learn about destributed system and deployment." },
   { id: "comparch", name: "Computer architecture", description: "Learn about computer architecture" },
   { id: "programing", name: "fundamentals of Programming", description: "Master Python programming language." },
-  { id: "Compiler", name: "Compiler", description: "Learn compiler programming fundamentals." }
+  { id: "Compiler", name: "Compiler", description: "Learn compiler programming fundamentals." },
+  { id: "fsa", name: "Fundamental of software engineering", description: "Learn about basics of software engineering" },
 ];
 
 export default function Home() {

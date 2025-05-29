@@ -14,10 +14,10 @@ const courses = [
   { id: "ds", name: "Distributed Systems" },
   { id: "cd", name: "Compiler Design" },
   { id: "mi", name: "Microcontroller and Interfacing" },
-  { id: "ca", name: "Computer Architecture" },
+  { id: "ca", name: "Computer organization andArchitecture" },
   { id: "fp", name: "Fundamentals of Programming" },
   { id: "cs", name: "Computer Security" },
-  { id: "fsa", name: "Formal System and Automata" },
+  { id: "fsa", name: "Fundamentals of software engineering" },
   { id: "ai", name: "Introduction to Artificial Intelligence" }
 ];
 
