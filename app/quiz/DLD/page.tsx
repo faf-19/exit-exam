@@ -1,13 +1,445 @@
 import { QuizContent } from "../[course]/quiz-content";
 
 const questions = [
-  {
-    "id": 1,
-    "question": "Which of the following majorly determines the number of emitters in a TTL digital circuit?",
-    "options": ["Fan – in", "Fan – out", "Propagation delay", "Noise immunity"],
-    "answer": 0,
-    "description": "Fan-in, which is the number of inputs connected to a gate, directly corresponds to the number of emitters in the input transistors of a TTL gate."
-  },
+
+      {
+        "id": 1,
+        "question": "Which of the following is an advantage of digital systems over analog systems?",
+        "options": [
+          "More susceptible to noise",
+          "Easier to design with high precision",
+          "Less accurate",
+          "More complex to process"
+        ],
+        "answer": "B",
+        "correct_answer_text": "Easier to design with high precision"
+      },
+      {
+        "id": 2,
+        "question": "What is the Excess-3 code of the decimal number 5?",
+        "options": ["0100", "1000", "1001", "0110"],
+        "answer": "B",
+        "correct_answer_text": "1000"
+      },
+      {
+        "id": 3,
+        "question": "Which law states that A + AB = A?",
+        "options": [
+          "Distributive Law",
+          "Absorption Law",
+          "Associative Law",
+          "Demorgan’s Theorem"
+        ],
+        "answer": "B",
+        "correct_answer_text": "Absorption Law"
+      },
+      {
+        "id": 4,
+        "question": "What is the main purpose of Karnaugh maps in digital logic design?",
+        "options": [
+          "Addition of binary numbers",
+          "Conversion of number systems",
+          "Minimization of Boolean expressions",
+          "Designing analog circuits"
+        ],
+        "answer": "C",
+        "correct_answer_text": "Minimization of Boolean expressions"
+      },
+      {
+        "id": 5,
+        "question": "Which circuit selects one of several input lines and forwards it to a single output line?",
+        "options": ["Decoder", "Encoder", "Multiplexer", "Demultiplexer"],
+        "answer": "C",
+        "correct_answer_text": "Multiplexer"
+      },
+      {
+        "id": 6,
+        "question": "Which flip-flop toggles its output on each clock cycle when both inputs are high?",
+        "options": ["SR", "D", "JK", "T"],
+        "answer": "C",
+        "correct_answer_text": "JK"
+      },
+      {
+        "id": 7,
+        "question": "Which shift register accepts serial input and provides parallel output?",
+        "options": ["SISO", "SIPO", "PISO", "PIPO"],
+        "answer": "B",
+        "correct_answer_text": "SIPO"
+      },
+      {
+        "id": 8,
+        "question": "How many states are there in a 3-bit binary counter?",
+        "options": ["4", "6", "8", "10"],
+        "answer": "C",
+        "correct_answer_text": "8"
+      },
+      {
+        "id": 9,
+        "question": "In which type of FSM does the output depend only on the current state?",
+        "options": [
+          "Mealy Machine",
+          "Turing Machine",
+          "Moore Machine",
+          "Register Machine"
+        ],
+        "answer": "C",
+        "correct_answer_text": "Moore Machine"
+      },
+      {
+        "id": 10,
+        "question": "What is the basic unit of data in digital electronics?",
+        "options": ["Byte", "Bit", "Nibble", "Word"],
+        "answer": "B",
+        "correct_answer_text": "Bit"
+      },
+      {
+        "id": 11,
+        "question": "Which of the following is an advantage of digital systems over analog systems?",
+        "options": [
+          "More susceptible to noise",
+          "Easier to design with high precision",
+          "Less accurate",
+          "More complex to process"
+        ],
+        "answer": "B",
+        "correct_answer_text": "Easier to design with high precision"
+      },
+      {
+        "id": 12,
+        "question": "What is the Excess-3 code of the decimal number 5?",
+        "options": ["0100", "1000", "1001", "0110"],
+        "answer": "B",
+        "correct_answer_text": "1000"
+      },
+      {
+        "id": 13,
+        "question": "Which law states that A + AB = A?",
+        "options": [
+          "Distributive Law",
+          "Absorption Law",
+          "Associative Law",
+          "Demorgan’s Theorem"
+        ],
+        "answer": "B",
+        "correct_answer_text": "Absorption Law"
+      },
+      {
+        "id": 14,
+        "question": "What is the main purpose of Karnaugh maps in digital logic design?",
+        "options": [
+          "Addition of binary numbers",
+          "Conversion of number systems",
+          "Minimization of Boolean expressions",
+          "Designing analog circuits"
+        ],
+        "answer": "C",
+        "correct_answer_text": "Minimization of Boolean expressions"
+      },
+      {
+        "id": 15,
+        "question": "Which circuit selects one of several input lines and forwards it to a single output line?",
+        "options": ["Decoder", "Encoder", "Multiplexer", "Demultiplexer"],
+        "answer": "C",
+        "correct_answer_text": "Multiplexer"
+      },
+      {
+        "id": 16,
+        "question": "Which flip-flop toggles its output on each clock cycle when both inputs are high?",
+        "options": ["SR", "D", "JK", "T"],
+        "answer": "C",
+        "correct_answer_text": "JK"
+      },
+      {
+        "id": 17,
+        "question": "Which shift register accepts serial input and provides parallel output?",
+        "options": ["SISO", "SIPO", "PISO", "PIPO"],
+        "answer": "B",
+        "correct_answer_text": "SIPO"
+      },
+      {
+        "id": 18,
+        "question": "How many states are there in a 3-bit binary counter?",
+        "options": ["4", "6", "8", "10"],
+        "answer": "C",
+        "correct_answer_text": "8"
+      },
+      {
+        "id": 19,
+        "question": "In which type of FSM does the output depend only on the current state?",
+        "options": [
+          "Mealy Machine",
+          "Turing Machine",
+          "Moore Machine",
+          "Register Machine"
+        ],
+        "answer": "C",
+        "correct_answer_text": "Moore Machine"
+      },
+      {
+        "id": 20,
+        "question": "What is the basic unit of data in digital electronics?",
+        "options": ["Byte", "Bit", "Nibble", "Word"],
+        "answer": "B",
+        "correct_answer_text": "Bit"
+      },
+      {
+        "id": 21,
+        "question": "Which of the following is an advantage of digital systems over analog systems?",
+        "options": [
+          "More susceptible to noise",
+          "Easier to design with high precision",
+          "Less accurate",
+          "More complex to process"
+        ],
+        "answer": "B",
+        "correct_answer_text": "Easier to design with high precision"
+      },
+      {
+        "id": 22,
+        "question": "What is the Excess-3 code of the decimal number 5?",
+        "options": ["0100", "1000", "1001", "0110"],
+        "answer": "B",
+        "correct_answer_text": "1000"
+      },
+      {
+        "id": 23,
+        "question": "Which law states that A + AB = A?",
+        "options": [
+          "Distributive Law",
+          "Absorption Law",
+          "Associative Law",
+          "Demorgan’s Theorem"
+        ],
+        "answer": "B",
+        "correct_answer_text": "Absorption Law"
+      },
+      {
+        "id": 24,
+        "question": "What is the main purpose of Karnaugh maps in digital logic design?",
+        "options": [
+          "Addition of binary numbers",
+          "Conversion of number systems",
+          "Minimization of Boolean expressions",
+          "Designing analog circuits"
+        ],
+        "answer": "C",
+        "correct_answer_text": "Minimization of Boolean expressions"
+      },
+      {
+        "id": 25,
+        "question": "Which circuit selects one of several input lines and forwards it to a single output line?",
+        "options": ["Decoder", "Encoder", "Multiplexer", "Demultiplexer"],
+        "answer": "C",
+        "correct_answer_text": "Multiplexer"
+      },
+      {
+        "id": 26,
+        "question": "Which flip-flop toggles its output on each clock cycle when both inputs are high?",
+        "options": ["SR", "D", "JK", "T"],
+        "answer": "C",
+        "correct_answer_text": "JK"
+      },
+      {
+        "id": 27,
+        "question": "Which shift register accepts serial input and provides parallel output?",
+        "options": ["SISO", "SIPO", "PISO", "PIPO"],
+        "answer": "B",
+        "correct_answer_text": "SIPO"
+      },
+      {
+        "id": 28,
+        "question": "How many states are there in a 3-bit binary counter?",
+        "options": ["4", "6", "8", "10"],
+        "answer": "C",
+        "correct_answer_text": "8"
+      },
+      {
+        "id": 29,
+        "question": "In which type of FSM does the output depend only on the current state?",
+        "options": [
+          "Mealy Machine",
+          "Turing Machine",
+          "Moore Machine",
+          "Register Machine"
+        ],
+        "answer": "C",
+        "correct_answer_text": "Moore Machine"
+      },
+      {
+        "id": 30,
+        "question": "What is the basic unit of data in digital electronics?",
+        "options": ["Byte", "Bit", "Nibble", "Word"],
+        "answer": "B",
+        "correct_answer_text": "Bit"
+      },
+      {
+        "id": 31,
+        "question": "Which of the following is an advantage of digital systems over analog systems?",
+        "options": [
+          "More susceptible to noise",
+          "Easier to design with high precision",
+          "Less accurate",
+          "More complex to process"
+        ],
+        "answer": "B",
+        "correct_answer_text": "Easier to design with high precision"
+      },
+      {
+        "id": 32,
+        "question": "What is the Excess-3 code of the decimal number 5?",
+        "options": ["0100", "1000", "1001", "0110"],
+        "answer": "B",
+        "correct_answer_text": "1000"
+      },
+      {
+        "id": 33,
+        "question": "Which law states that A + AB = A?",
+        "options": [
+          "Distributive Law",
+          "Absorption Law",
+          "Associative Law",
+          "Demorgan’s Theorem"
+        ],
+        "answer": "B",
+        "correct_answer_text": "Absorption Law"
+      },
+      {
+        "id": 34,
+        "question": "What is the main purpose of Karnaugh maps in digital logic design?",
+        "options": [
+          "Addition of binary numbers",
+          "Conversion of number systems",
+          "Minimization of Boolean expressions",
+          "Designing analog circuits"
+        ],
+        "answer": "C",
+        "correct_answer_text": "Minimization of Boolean expressions"
+      },
+      {
+        "id": 35,
+        "question": "Which circuit selects one of several input lines and forwards it to a single output line?",
+        "options": ["Decoder", "Encoder", "Multiplexer", "Demultiplexer"],
+        "answer": "C",
+        "correct_answer_text": "Multiplexer"
+      },
+      {
+        "id": 36,
+        "question": "Which flip-flop toggles its output on each clock cycle when both inputs are high?",
+        "options": ["SR", "D", "JK", "T"],
+        "answer": "C",
+        "correct_answer_text": "JK"
+      },
+      {
+        "id": 37,
+        "question": "Which shift register accepts serial input and provides parallel output?",
+        "options": ["SISO", "SIPO", "PISO", "PIPO"],
+        "answer": "B",
+        "correct_answer_text": "SIPO"
+      },
+      {
+        "id": 38,
+        "question": "How many states are there in a 3-bit binary counter?",
+        "options": ["4", "6", "8", "10"],
+        "answer": "C",
+        "correct_answer_text": "8"
+      },
+      {
+        "id": 39,
+        "question": "In which type of FSM does the output depend only on the current state?",
+        "options": [
+          "Mealy Machine",
+          "Turing Machine",
+          "Moore Machine",
+          "Register Machine"
+        ],
+        "answer": "C",
+        "correct_answer_text": "Moore Machine"
+      },
+      {
+        "id": 40,
+        "question": "What is the basic unit of data in digital electronics?",
+        "options": ["Byte", "Bit", "Nibble", "Word"],
+        "answer": "B",
+        "correct_answer_text": "Bit"
+      },
+      {
+        "id": 41,
+        "question": "Which of the following is an advantage of digital systems over analog systems?",
+        "options": [
+          "More susceptible to noise",
+          "Easier to design with high precision",
+          "Less accurate",
+          "More complex to process"
+        ],
+        "answer": "B",
+        "correct_answer_text": "Easier to design with high precision"
+      },
+      {
+        "id": 42,
+        "question": "What is the Excess-3 code of the decimal number 5?",
+        "options": ["0100", "1000", "1001", "0110"],
+        "answer": "B",
+        "correct_answer_text": "1000"
+      },
+      {
+        "id": 43,
+        "question": "Which law states that A + AB = A?",
+        "options": [
+          "Distributive Law",
+          "Absorption Law",
+          "Associative Law",
+          "Demorgan’s Theorem"
+        ],
+        "answer": "B",
+        "correct_answer_text": "Absorption Law"
+      },
+      {
+        "id": 44,
+        "question": "What is the main purpose of Karnaugh maps in digital logic design?",
+        "options": [
+          "Addition of binary numbers",
+          "Conversion of number systems",
+          "Minimization of Boolean expressions",
+          "Designing analog circuits"
+        ],
+        "answer": "C",
+        "correct_answer_text": "Minimization of Boolean expressions"
+      },
+      {
+        "id": 45,
+        "question": "Which circuit selects one of several input lines and forwards it to a single output line?",
+        "options": ["Decoder", "Encoder", "Multiplexer", "Demultiplexer"],
+        "answer": "C",
+        "correct_answer_text": "Multiplexer"
+      },
+      {
+        "id": 46,
+        "question": "Which flip-flop toggles its output on each clock cycle when both inputs are high?",
+        "options": ["SR", "D", "JK", "T"],
+        "answer": "C",
+        "correct_answer_text": "JK"
+      },
+      {
+        "id": 47,
+        "question": "Which shift register accepts serial input and provides parallel output?",
+        "options": ["SISO", "SIPO", "PISO", "PIPO"],
+        "answer": "B",
+        "correct_answer_text": "SIPO"
+      },
+      {
+        "id": 48,
+        "question": "How many states are there in a 3-bit binary counter?",
+        "options": ["4", "6", "8", "10"],
+        "answer": "C",
+        "correct_answer_text": "8"
+      },
+      {
+        "id": 49,
+        "question": "In which type of FSM does the output depend only on the current state?",
+        "options": [
+          "Mealy Machine",
+          "Turing Machine",
+      
   {
     "id": 2,
     "question": "What are the basic gates in MOS logic family?",
@@ -54,8 +486,8 @@ const questions = [
     "id": 8,
     "question": "What is the gray equivalent of (25)10",
     "options": ["1101", "110101", "10110", "10101"],
-    "answer": 2,
-    "description": "25 in binary is 11001. To convert to Gray code: MSB remains the same (1). Then XOR each bit with the bit to its left: 1 XOR 1 = 0, 1 XOR 0 = 1, 0 XOR 0 = 0, 0 XOR 1 = 1. Resulting in 10101."
+    "answer": 4,
+    "description": "25 in binary is 11001. To convert to Gray code: MSB remains the same (1). Then XOR each bit with the bit to its left: 1 XOR 1 = 0, 1 XOR 0 = 1, 0 XOR 0 = 0, 0 XOR 1 = 1. Resulting in 10101. the answer is D"
   },
   {
     "id": 9,
@@ -392,8 +824,8 @@ const questions = [
       {
         "id": 47,
         "question": "Which of the following logic circuits is a realization of the function F whose Karnaugh map is shown in figure.",
-        "options": [],
-        "answer": -1,
+        "options": ["A", "B", "C", "D"],
+        "answer": 0,
         "description": "Without the K-map and the logic circuit options, I cannot answer this question."
       },
       {
@@ -916,14 +1348,11 @@ const questions = [
                   "When both inputs are LOW, an invalid state exists",
                   "The input is toggled into the flip-flop on the leading edge of the clock and is passed to the output on the trailing edge of the clock"
                 ],
-                "answer": 1,
-                "description": "A positive edge-triggered D flip-flop samples the D input and transfers its value to the Q output on the rising edge (leading edge) of the clock signal."
-              }
-            
-          
-        
-];
-
+                   "answer": 0,
+                   "description": "A negative-edge-triggered D flip-flop transfers the logic level present at the D input to the Q output only when the clock signal transitions from HIGH to LOW (Negative Going Transition - NGT)."
+      }
+    ]
+  ]               
 export default function OOPQuizPage() {
-  return <QuizContent questions={questions} courseTitle="Digital Logic Design" />;
+  return <QuizContent questions={questions} courseTitle="Data Structure and Algorithm" />;
 } 
