@@ -1,7 +1,6 @@
 import { QuizContent } from "../[course]/quiz-content";
 
 const questions = [
-
       {
         "id": 1,
         "question": "Which of the following is an advantage of digital systems over analog systems?",
@@ -208,7 +207,7 @@ const questions = [
           "Distributive Law",
           "Absorption Law",
           "Associative Law",
-          "Demorgan’s Theorem"
+          "Demorgans Theorem"
         ],
         "answer": "B",
         "correct_answer_text": "Absorption Law"
@@ -298,7 +297,7 @@ const questions = [
           "Distributive Law",
           "Absorption Law",
           "Associative Law",
-          "Demorgan’s Theorem"
+          "Demorgans Theorem"
         ],
         "answer": "B",
         "correct_answer_text": "Absorption Law"
@@ -388,7 +387,7 @@ const questions = [
           "Distributive Law",
           "Absorption Law",
           "Associative Law",
-          "Demorgan’s Theorem"
+          "Demorgans Theorem"
         ],
         "answer": "B",
         "correct_answer_text": "Absorption Law"
@@ -439,7 +438,12 @@ const questions = [
         "options": [
           "Mealy Machine",
           "Turing Machine",
-      
+          "Moore Machine",
+          "Register Machine"
+        ],
+        "answer": "C",
+        "correct_answer_text": "Moore Machine"
+      },
   {
     "id": 2,
     "question": "What are the basic gates in MOS logic family?",
@@ -1350,9 +1354,8 @@ const questions = [
                 ],
                    "answer": 0,
                    "description": "A negative-edge-triggered D flip-flop transfers the logic level present at the D input to the Q output only when the clock signal transitions from HIGH to LOW (Negative Going Transition - NGT)."
-      }
-    ]
-  ]               
-export default function OOPQuizPage() {
-  return <QuizContent questions={questions} courseTitle="Data Structure and Algorithm" />;
-} 
+      },
+];              
+    export default function OOPQuizPage() {
+      return <QuizContent questions={questions} courseTitle="Data Structure and Algorithm" />;
+    }
